@@ -27,7 +27,7 @@
 -include vendor/samsung/kltetmo/BoardConfigVendor.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := kltetmo
+TARGET_OTA_ASSERT_DEVICE := klte,kltetmo,SM-G900T
 
 # Kernel
 TARGET_KERNEL_VARIANT_CONFIG := msm8974pro_sec_klte_tmo_defconfig
