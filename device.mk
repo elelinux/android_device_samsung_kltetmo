@@ -24,5 +24,9 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/kltetmo/overlay
 DEVICE_PACKAGE_OVERLAYS += device/samsung/klte-common/overlay-gsm
 
 # Inherit from klte-common
-$(call inherit-product, device/samsung/klte-common/klte-common.mk)
+$(call inherit-product, device/samsung/klte-common/klte.mk)
+
+# Audio
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/audio/mixer_paths.xml:system/etc/mixer_paths.xml
 
