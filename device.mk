@@ -24,7 +24,7 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/kltetmo/overlay
 DEVICE_PACKAGE_OVERLAYS += device/samsung/klte-common/overlay-gsm
 
 # Inherit from klte-common
-$(call inherit-product, device/samsung/klte-common/klte.mk)
+$(call inherit-product, device/samsung/klte-common/klte-common.mk)
 
 # Audio
 PRODUCT_COPY_FILES += \
